@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-#Author: Sunday, Justice Gabriel
+# Author: Sunday, Justice Gabriel
 
 if __name__ == "__main__":
     """print the sum of 1 and 2."""
