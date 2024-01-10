@@ -1,4 +1,4 @@
-#!/usr//bin/python3
+#!/usr/bin/python3
 # Author: Sunday,Justice Gabriel
 # Write a function that retrieves an element from a list like in C.
 
