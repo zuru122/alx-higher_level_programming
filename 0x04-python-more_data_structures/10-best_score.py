@@ -16,7 +16,7 @@ def best_score(a_dictionary):
         return None
 
     best_key = ''
-    large_num = next(iter(a_dictionary.values()))
+    large_num = list(a_dictionary.values())[0]
     for key in a_dictionary:
         if a_dictionary[key] > large_num:
             large_num = a_dictionary[key]
