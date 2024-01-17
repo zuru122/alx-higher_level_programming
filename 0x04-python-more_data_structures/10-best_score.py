@@ -12,13 +12,8 @@ You are not allowed to import any module
 
 
 def best_score(a_dictionary):
-    if a_dictionary is None:
-        return None
-
-    best_key = ''
-    large_num = list(a_dictionary.values())[0]
-    for key in a_dictionary:
-        if a_dictionary[key] > large_num:
-            large_num = a_dictionary[key]
-            best_key = key
-    return best_key
+    if a_dictionary:
+        max_value = max(a_dictionary, key=a_dictionary.get)
+    else:
+        max_value = None
+    return(max_value)
