@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 for ascii_value in range(97, 123):
-    char = chr(ascii_value)
-    if (char == 'e' or char == 'q'):
+    if (chr(ascii_value) == 'e' or chr(ascii_value) == 'q'):
         continue
-    print("{}".format(char), end="")
+    print("{}".format(chr(ascii_value)), end="")
