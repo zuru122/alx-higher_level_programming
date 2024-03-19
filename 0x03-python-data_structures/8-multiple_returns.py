@@ -7,4 +7,4 @@ def multiple_returns(sentence):
     else:
         first = sentence[0]
     length = len(sentence)
-    return length, first
+    return (length, first)
