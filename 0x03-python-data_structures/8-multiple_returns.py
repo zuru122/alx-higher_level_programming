@@ -2,9 +2,8 @@
 # Author: Sunday, Justice Gabriel
 
 def multiple_returns(sentence):
-    if len(sentence) == '':
-        first = None
+    if sentence != '':
+        first_char = sentence[0]
     else:
-        first = sentence[0]
-    length = len(sentence)
-    return (length, first)
+        first_char = None
+    return (len(sentence), first_char)
