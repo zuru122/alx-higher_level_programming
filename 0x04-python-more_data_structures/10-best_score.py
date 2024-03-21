@@ -12,8 +12,12 @@ You are not allowed to import any module
 
 
 def best_score(a_dictionary):
-    if a_dictionary:
-        max_value = max(a_dictionary, key=a_dictionary.get)
-    else:
-        max_value = None
-    return(max_value)
+    if not a_dictionary:
+        return None
+        '''float('-inf') represents negative infinity as a
+        floating-point number in Python.'''
+    max_value = float('-inf')
+    for key in a_dictionary:
+        if a_dictionary[key] > max_value:
+            max_value = a_dictionary[key]
+    return max_value
