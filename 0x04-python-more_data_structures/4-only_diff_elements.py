@@ -9,7 +9,4 @@ You are not allowed to import any module
 
 
 def only_diff_elements(set_1, set_2):
-    _set1 = set_1.difference(set_2)
-    _set2 = set_2.difference(set_1)
-    _set = _set1.union(_set2)
-    return _set
+    return (set_1 ^ set_2)
